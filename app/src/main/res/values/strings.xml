@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TMDB</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="news_heading">Article New Section</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="headline_heading">Headline Section</string>
 </resources>

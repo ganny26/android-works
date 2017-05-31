@@ -19,4 +19,6 @@
         android:textSize="36sp"
         tools:textSize="36sp"
         android:textColor="@color/colorPrimaryDark" />
+    
+
 </RelativeLayout>
