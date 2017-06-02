@@ -19,6 +19,15 @@
         android:textSize="36sp"
         tools:textSize="36sp"
         android:textColor="@color/colorPrimaryDark" />
-    
+
+    <Button
+        android:text="SHOW NEWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/button_show_article" />
+
 
 </RelativeLayout>
