@@ -25,7 +25,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".NewsArticleActivity" />
-        <activity android:name=".SmoothScrollActivity"></activity>
+        <activity android:name=".PinterestActivity"></activity>
     </application>
 
 </manifest>
