@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">TMDB</string>
+    <string name="app_name">wa2cook</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="news_heading">Article New Section</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="headline_heading">Headline Section</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
