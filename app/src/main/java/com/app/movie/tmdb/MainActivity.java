@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
     public static final String EXTRA_MESSAGE = "com.app.movie.tmdb";
 
@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.btn_pinterest).setOnClickListener(this);
     }
 
     public void sendMessage(View view){
@@ -23,5 +24,12 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE,message);
         startActivity(intent);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.btn_pinterest){
+            startActivity(new Intent(this,PinterestActivity.class));
+        }
     }
 }
