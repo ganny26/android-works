@@ -13,6 +13,7 @@ import com.app.movie.lib.ItemObjects;
 
 public class PinterestActivity extends AppCompatActivity {
     private StaggeredGridLayoutManager gaggeredGridLayoutManager;
+    OkHttpClient client = new OkHttpClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class PinterestActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
 
-        gaggeredGridLayoutManager = new StaggeredGridLayoutManager(3, 1);
+        gaggeredGridLayoutManager = new StaggeredGridLayoutManager(2, 1);
         recyclerView.setLayoutManager(gaggeredGridLayoutManager);
 
         List<ItemObjects> gaggeredList = getListItemData();
