@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.movie.tmdb">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +25,9 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".NewsArticleActivity" />
-        <activity android:name=".PinterestActivity"></activity>
+        <activity android:name=".PinterestActivity" />
+        <activity android:name=".AsyncActivity" />
+        <activity android:name=".ApiActvity"></activity>
     </application>
 
 </manifest>
