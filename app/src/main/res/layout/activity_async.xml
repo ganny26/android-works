@@ -10,4 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.app.movie.tmdb.AsyncActivity">
 
+    <Button
+        android:text="get request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/btnGetRequest" />
+
+    <TextView
+        android:text="Result..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textViewResult"
+        android:layout_below="@+id/btnGetRequest"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

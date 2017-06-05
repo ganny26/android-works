@@ -43,5 +43,14 @@
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Async Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_async"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btn_pinterest"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
