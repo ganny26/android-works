@@ -13,7 +13,6 @@ import com.app.movie.lib.ItemObjects;
 
 public class PinterestActivity extends AppCompatActivity {
     private StaggeredGridLayoutManager gaggeredGridLayoutManager;
-    OkHttpClient client = new OkHttpClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

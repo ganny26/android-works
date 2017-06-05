@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btnAsync = (Button) findViewById(R.id.btn_async);
+        btnAsync.setOnClickListener(this);
         findViewById(R.id.btn_pinterest).setOnClickListener(this);
     }
 
@@ -30,6 +33,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View v) {
         if(v.getId() == R.id.btn_pinterest){
             startActivity(new Intent(this,PinterestActivity.class));
+        }
+        else if(v.getId() == R.id.btn_async){
+            startActivity(new Intent(this,AsyncActivity.class));
         }
     }
 }
